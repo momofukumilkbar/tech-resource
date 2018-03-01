@@ -1,0 +1,9 @@
+.result-detail {
+  margin: 20px auto 10px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.result-step {
+  margin-top: 10px;
+}
