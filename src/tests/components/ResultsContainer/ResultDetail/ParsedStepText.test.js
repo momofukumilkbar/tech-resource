@@ -5,7 +5,7 @@ const result = {
   name: 'add adt pulse users to a location',
   category: 'adt',
   steps: [
-    'login to adt pulse at [link 1] and [link 2]',
+    'please visit [link 1] for a video walkthrough',
     'select the location from the drop down',
     'click "System" from the top selection',
     'click on "Users" from the subselection',
@@ -15,11 +15,8 @@ const result = {
   links: [
     {
       id: 1,
-      link: 'https://portal.adtpulse.com/myhome/9.6.0-610/access/signin.jsp'
-    },
-    {
-      id: 2,
-      link: 'https://portal.adtpulse.com/myhome/9.6.0-610/access/signin.jsp'
+      link: 'https://momofukumilkbar.github.io/hangouts-meet-how-to/',
+      linkText: 'hangouts meet resource page'
     }
   ],
   possibleSearchQueries: [
@@ -40,5 +37,7 @@ const component = shallow(
 )
 
 it('returns an array of strings a link component', () => {
-  // console.log(component.debug())
+  expect(component.find('a')).toHaveLength(1)
+  expect(component.find('span')).toHaveLength(2)
+  expect(component.find('a').at(0)).toHaveText('hangouts meet resource page')
 })
