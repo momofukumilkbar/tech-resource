@@ -3,6 +3,7 @@ const POS_END_OF_DAY = {
   category: 'pos',
   scenario: 'pos at any location is unresponsive. POS may give a message stating that end of day might need to be completed or that the business day does not match the calendar day',
   steps: [
+    'please contact tech@ before attempting any of these steps',
     'login to brink backend at [link 1] on a microsoft silverlight compatible browser',
     'click on "Devices" from the sidebar',
     'select the affected locaiton',
