@@ -1,4 +1,4 @@
-#Milk Bar Tech Resource
+# Milk Bar Tech Resource
 
 Easily search through common tech department tasks and step-by-step instructions for completion.
 
