@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import troubleshootingItems from '../constants/troubleshootingItems'
 import ResultsContainer from './ResultsContainer/ResultsContainer'
+import search from '../utils/search'
 
 class App extends Component {
   constructor(props) {
@@ -39,11 +40,7 @@ class App extends Component {
         if (this.state.pastSearches[value]) {
           results = this.state.pastSearches[value]
         } else {
-          results = troubleshootingItems.filter(item =>
-            item.possibleSearchQueries.find(query =>
-              query.toLowerCase().indexOf(value) > -1
-            )
-          )
+          results = search(value)
         }
 
         this.setState({
