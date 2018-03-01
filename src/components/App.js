@@ -100,15 +100,13 @@ class App extends Component {
             onClick={e => this.handleResultClick(e)}
           />
           : ''}
-        </div>
-        <div>
-          Can't find the item you're looking for? See the
-          <a href='https://github.com/momofukumilkbar/tech-resource/blob/master/README.md'
-          >
-            contributing guide
-          </a>
-          to contribute to this repository.
-        </div>
+          <div>
+            Can't find the item you're looking for? See the <a href='https://github.com/momofukumilkbar/tech-resource/blob/master/README.md'
+            >
+              contributing guide
+            </a> to contribute to this repository.
+          </div>
+        </div>        
       </div>
     )
   }
