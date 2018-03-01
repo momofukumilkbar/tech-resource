@@ -85,14 +85,17 @@ class App extends Component {
         <header className='header'>
           <h1>Milk Bar Tech Resource</h1>
         </header>
+
         <div className='content'>
           <h2 className='title'>Enter your query below</h2>
+
           <input
             className='search-bar'
             type='text'
             onChange={e => this.handleOnChange(e)}
             ref={input => this.input = input}
           />
+
           { results.length > 0
           ? <ResultsContainer
             results={results}
@@ -100,13 +103,13 @@ class App extends Component {
             onClick={e => this.handleResultClick(e)}
           />
           : ''}
-          <div>
-            Can't find the item you're looking for? See the <a href='https://github.com/momofukumilkbar/tech-resource/blob/master/README.md'
-            >
-              contributing guide
-            </a> to contribute to this repository.
-          </div>
-        </div>        
+        </div>
+        <div className='contributing-guide'>
+          Can't find the item you're looking for? See the <a href='https://github.com/momofukumilkbar/tech-resource/blob/master/README.md'
+          >
+            contributing guide
+          </a> to contribute to this repository.
+        </div>
       </div>
     )
   }

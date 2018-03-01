@@ -1,7 +1,9 @@
 .container {
   display: grid;
-  grid-template-rows: 2;
+  grid-template-rows: 20% auto 50px;
   grid-template-columns: 1;
+  height: 100%;
+
 }
 
 .header {
@@ -24,4 +26,14 @@
   font-size: 24px;
   width: 400px;
   height: 50px;
+  text-align: center;
+}
+
+.contributing-guide {
+  margin-top: 10px;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  text-align: center;
 }
