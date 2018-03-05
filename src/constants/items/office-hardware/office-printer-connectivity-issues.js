@@ -5,8 +5,8 @@ const OFFICE_PRINTER_CONNECTIVITY_ISSUES = {
   category: 'office hardware',
   scenario: 'any of the office printers are experiencing connectivity issues',
   steps: [
-    'this troubleshooter can be completed by anyone in the office'
-    'this troubleshooter was last updated on 3/1/2018. If any of the data is inaccurate here, [link 1] to update.'
+    'this troubleshooter can be completed by anyone in the office',
+    'this troubleshooter was last updated on 3/1/2018. If any of the data is inaccurate here, [link 1] to update.',
     'identify if the issue is isolated to one computer. If this is a widespread issue, restart the printer.',
     'confirm that the office wifi is online',
     'if this issue is isolated to one computer, clear that computer\'s print queue, and restart the computer. You may also remove the printer from the connected devices and reconnect. If both steps fail, download drivers: Canon: [link 2], Dell: [link 3]',
